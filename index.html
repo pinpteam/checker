@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sara</title>
+  
+</head>
+<input type="text" id="txt" placeholder="Ange numret">
+<button onclick="checker(document.getElementById('txt').value)">
+  Studie
+</button>
+<script>
+  function check(num){
+return num.split('').reverse().join('') === num
+}
+function checker(str){
+  console.log(str)
+ 
+  let valid = check(str);
+  if(valid){
+    alert('Detta är ett palindrom ')
+  }
+  else{
+    alert('Detta är inte ett palindrom ')
+  }
+}
+</script>
+</body>
+</html>
